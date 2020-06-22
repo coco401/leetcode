@@ -44,6 +44,7 @@
 
 # @lc code=start
 class Solution:
+
     def longestDupSubstring(self, S: str) -> str:
         n = len(S)
         left, right = 0, n-1
@@ -63,6 +64,13 @@ class Solution:
         return ''
 
     def RabinKarp(self, L, S):
+        '''
+        input:
+        -L为猜测的长度
+        -S为目标字符串
+        output:
+        (真假值,字符串)
+        '''
         a = 26
         n = len(S)
         h = 0
